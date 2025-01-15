@@ -8,10 +8,14 @@
 }
 
 header {
+  width: 1600px;
+  margin: 0 auto;
   background: rgb(255, 248, 243)
     /* url("./portfolio-resources/images/header_bg.png") no-repeat right bottom, */
-    url("./portfolio-resources/images/developer.png") no-repeat left;
+    url("./portfolio-resources/images/developer.png") no-repeat 2rem;
   /* background-image: url('./header_bg.png'); */
+  /* height: 70vh; */
+  padding-left: 2rem;
 }
 
 .logo {
@@ -32,13 +36,15 @@ header {
   margin-left: 40px;
   text-decoration: none;
   position: relative;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 .component a::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: rgb(253, 110, 10);
   left: 0;
   bottom: -6px;
@@ -85,6 +91,7 @@ header {
   outline: none;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-btn {
@@ -111,11 +118,16 @@ header {
   height: 676px;
 }
 
+p {
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+}
 .heading-content {
   margin-left: 130px;
   display: flex;
   flex-direction: column;
   gap: 1.25em;
+  width: 585px;
 }
 
 .introduce {
@@ -128,10 +140,134 @@ header {
   font-size: 85px;
 }
 
-main{
-    max-width: 1140px;
+main {
+  max-width: 1140px;
+  margin: 130px auto;
+  text-align: center;
 }
-.about{
-    background-color: rgb(255, 248, 243);
-    border-radius: 10px;
+.main-title {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.about {
+  background-color: rgb(255, 248, 243);
+  border-radius: 10px;
+  padding: 131px 157px;
+}
+
+.about-content {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid black;
+  /* mar: 131px 157px; */
+  padding: 5px;
+}
+
+.about-content h3 + p {
+  margin: 1rem auto;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  margin: 100px auto;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  text-align: left;
+  margin-left: 1.5em;
+}
+.card-container {
+  display: flex;
+}
+.language {
+  margin: 1rem 0;
+}
+.experience {
+  margin: 1.5rem 0;
+}
+
+.resume-container {
+  display: flex;
+  gap: 1.5rem;
+  text-align: left;
+  margin: 100px 0 30px 0;
+  
+}
+.education {
+  color: rgb(71, 71, 71);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.degree {
+  color: rgb(71, 71, 71);
+  font-size: 25px;
+  font-weight: 700;
+}
+.institute {
+  color: rgb(117, 117, 117);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.education-card{
+  border-bottom: 1px solid rgb(209, 209, 209);
+  padding-bottom: 30px;
+}
+
+footer{
+  margin-top: 100px;
+  background-color: rgb(255, 248, 243);
+  
+}
+.footer{
+  padding: 130px 0;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 115px;
+}
+input{
+  width: 100%;
+  border-radius: 5px;
+  padding: 18px 30px;
+  border: none;
+  margin-bottom: 1.5rem;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+input::placeholder{
+  color: rgb(117, 117, 117);
+  
+}
+
+.footer-description{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+textarea{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+textarea:focus{
+  border: 2px solid rgb(253, 110, 10);
+}
+
+input:focus{
+  border: 2px solid rgb(253, 110, 10);
 }
